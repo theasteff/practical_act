@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body> 
+		<h1>PIZZA by the SLICE</h1>
+		<form action=# method=host>
+			<h2>Personal Details</h2>
+			<p>
+			<label for="fullname">Full Name:</label>
+			<input type="text" placeholder="Enter you Full Name" id="fullname" name="fullname" minlength="5" maxlength="60" required>
+			</p>
+			<p>
+			<label for="email">Email Address:</label>
+			<input type="email" placeholder="Enter your email" id="email" name="email">
+			</p>
+			<p>
+			<label for="number">Phone Number:</label>
+			<input type="tel" placeholder="Enter your phone number"id="number" name="number" pattern=[0-9]{7-11} minlength="7" maxlength="11">
+			</p>
+			<p>
+			<label for="age">Age:</label>
+			<input type="number" placeholder="Enter your age" id="age" name="age" min="13" max="99">
+			</p>
+	
+			<h2>Choose your Pizza Size</h2>
+			<p name="size">
+			<input type="radio" id="small" name="size" value="small">
+			<label for="small">Small</label><br>
+			<input type="radio" id="medium" name="medium" value="medium" checked>
+			<label for="medium">Medium</label><br>
+			<input type="radio" id="large" name="size" value="large">
+			<label for="large">Large</label><br>
+			<input type="radio" id="extralarge" name="size" value="extralarge">
+			<label for="extralarge">Extra Large</label>
+			</p>
+			
+			<p>
+			<label for=crust>Crust Type:</label>
+			<select id="crust" required>
+				<option value="" disabled selected>---Choose Crust---</option>
+				<option value="thin">Thin</option>
+				<option value="thick">Thick</option>
+				<option value="stuffed">Stuffed</option>
+				<option value="gluten-free">Gluten-Free</option>
+
+			</select>
+			</p>
+			
+		</form>
+	</body>
+</html>
